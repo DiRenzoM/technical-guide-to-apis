@@ -52,7 +52,7 @@ If the above makes sense then you understand the most fundamental components of 
 
 ### Different HTTP requests
 
-Let's try to send a different type of HTTP request now, for example a POST request. `client.py` now looks like the following:
+Let's try to send a different type of HTTP request in `client.py`, for example a POST request.
 
 `client.py`:
 
