@@ -1,5 +1,5 @@
 # Technical Guide to APIs
-A brief introduction and exploration of APIs using Python's Flask library.
+A brief exploration of APIs using Python's Flask library.
 ---
 
 **A**pplication **P**rogramming **I**nterfaces are unavoidable in modern software development. After a brief introduction, let's walk through a simple example to gain an intuitive understanding of how they work.
