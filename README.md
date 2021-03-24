@@ -147,7 +147,7 @@ If all goes well we should see "ID is stored." once we kick off the new `client.
 
 ![get_success](img/get_success.PNG)
 
-We've done it! Our server saved the data from our post and recognized that we passed in the same id during the GET request. It isn't too much of a further leap to imagine storing and querying data from a database.
+We've done it! Our server saved the data from our POST request and recognized that we passed in the same id during the GET request. It isn't too much of a further leap to imagine storing and querying data from a database.
 
 ## Wrap up
 
