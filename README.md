@@ -19,6 +19,8 @@ A [virtual environment](https://docs.python.org/3/tutorial/venv.html) will be ut
 
 Let's start by defining a single route in `server.py`.
 
+`server.py`:
+
     from flask import Flask
     app = Flask(__name__)
 
@@ -29,6 +31,8 @@ Let's start by defining a single route in `server.py`.
 As we can see there is one root route, `/`, and when it is called the function `hello_world` executes. It's as simple as it looks.
 
 Let's now create `client.py` and have it call that route. The vast majority of the time [HTTP messages](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages) are used to communicate via API, which is exactly the purpose of Requests. Note: By default, Flask runs on `localhost:5000`.
+
+`client.py`:
 
     import requests
 
@@ -50,6 +54,8 @@ If the above makes sense then you understand the most fundamental components of 
 
 Let's try to send a different type of HTTP request now, for example a POST request. `client.py` now looks like the following:
 
+`client.py`:
+
     import requests
 
     #r = requests.get('http://localhost:5000')
@@ -65,6 +71,8 @@ Let's send it out and see what happens.
 As we can see, a `405 Method Not Allowed` HTTP response was returned to our client. This is because Flask routes accept only GET requests by default, and our implementation of the `/` route did not specify that it can handle POST requests.
 
 Let's fix that, and modify the return text in `server.py` so we can see the difference between a GET and a POST.
+
+`server.py`:
 
     from flask import Flask, request
     app = Flask(__name__)
