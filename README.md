@@ -84,7 +84,7 @@ Incredible! `server.py` was able to accept a POST request and return the appropr
 
 ### URL parameters and simple backend logic
 
-API routes offer even more flexibility through URL parameters. Part of the route itself can be converted into a variable. Routes can be extended to include multiple variables or static words through the use of `/`, similar to navigating a file system or website.
+API routes offer even more flexibility through URL parameters. Part of the route itself can be converted into a variable. Routes can be extended to include multiple variables or static expressions through the use of `/`, similar to navigating a file system or website.
 
 Let's rework `server.py` so that POST and GET requests are received by two separate routes, then let's update the GET route to accept an id that we'll set in the POST route. Lastly, we'll update both `server.py` and `client.py` to explicitly use JSON.
 
